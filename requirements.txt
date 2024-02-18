@@ -1,0 +1,3 @@
+sklearn
+PyQt5
+numpy
