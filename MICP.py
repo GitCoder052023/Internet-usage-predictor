@@ -17,7 +17,7 @@ from sklearn.preprocessing import StandardScaler, PolynomialFeatures
 class MICP:
     def __init__(self):
         # Read CSV file into a DataFrame
-        self.df = pd.read_csv('medical.csv')
+        self.df = pd.read_csv('Dataset/medical.csv')
 
     def BaseModel(self, test=True):
         age = self.df['age'].values.tolist()
