@@ -6,7 +6,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
 # ------------DATA PREPARATION-----------
-df = pd.read_csv("Assets/mail_data.csv")
+df = pd.read_csv("Dataset/mail_data.csv")
 data = df.where(pd.notnull(df), "")
 data.loc[data["Category"] == "spam", "Category"] = 0
 data.loc[data["Category"] == "ham", "Category"] = 1
